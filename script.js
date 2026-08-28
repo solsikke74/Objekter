@@ -1,25 +1,16 @@
 
-const filmer = ["Project Hail Mary", " Erin Brockowich", "The Martian"];
-document.getElementById("demo").innerText = filmer;
-
-
-const fruits = ["Banana", "Orange", "Apple", "Mango"];
-let fLen = fruits.length;
-
-let text = "<ul>";
-for (let i = 0; i < fLen; i++) {
-  text += "<li>" + fruits[i] + "</li>";
+const elev ={
+  navn: "Anna",
+  alder: 17,
+  klasse: "2ITKA"
 }
-text += "</ul>";
 
-document.getElementById("fruit").innerHTML = text;
-document.getElementById("fruit2").innerText = text;
+document.getElementById("eleven").innerHTML = "Navn: " + elev.navn + "<br>" + "Alder: " + elev.alder + "<br>" + "Klasse: " + elev.klasse;
 
-const tall = [1, 2, 3, 4, 5];
-document.getElementById("tall").innerText = tall;
+const bil={
+  merke: "Ford",
+  modell: "Kuga Titanium X",
+  Årsmodell: "2018"
+}
 
-const sum = tall.reduce((total, verdi) => total + verdi, 0);
-document.getElementById("sum").innerHTML = sum; 
-
-
-
+document.getElementById("bilen").innerHTML = "Merke: " + bil.merke + "<br>" + "Modell: " + bil.modell + "<br>" + "Årsmodell: " + bil.Årsmodell;
