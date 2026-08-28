@@ -23,3 +23,26 @@ for (let x in Bok) {
 
 document.getElementById("Bokliste").innerHTML = tekst;
 
+const Elever = [
+    {
+        navn: "Liv",
+        alder: 17
+    },
+    {
+        navn: "Ola",
+        alder: 15
+    },
+    {
+        navn: "Kari",
+        alder: 18
+    }
+];
+
+
+let eleverTekst = "";
+for (let x in Elever) {
+    if (Elever[x].alder > 16) {
+        eleverTekst += "<p>" + Elever[x].navn + " er " + Elever[x].alder + " år.</p>";
+    }
+}
+document.getElementById("Eleverliste").innerHTML = eleverTekst;
