@@ -18,3 +18,14 @@ const elev ={
 elev.alder = 18;
 
 document.getElementById("eleven").innerHTML = "Navn: " + elev.navn + "<br>" + "Alder: " + elev.alder + "<br>" + "Klasse: " + elev.klasse;
+
+const elevEndret ={
+  navn: "Anna",
+  alder: 17,
+  klasse: "2ITKA"
+}
+
+delete elev.alder;
+
+document.getElementById("elevenUtenAlder").innerHTML = "Navn: " + elev.navn + "<br>" + "Klasse: " + elev.klasse;
+
