@@ -15,9 +15,11 @@ const Bok = [
 
 let tekst = ""; /*Vi lager en variabel som heter tekst, som en tekststreng, der vi samler all HTML-kode */
 
-for (let bok of Bok) {
-    tekst += `<p>${bok.tittel} av ${bok.forfatter}</p>`;
-}
+
+for (let x in Bok) {
+  tekst += "<b>Tittel:</b> " + Bok[x].tittel + "<br>" + "<b>Forfatter:</b> " + Bok[x].forfatter + "<br><br>";
+};
+
 
 document.getElementById("Bokliste").innerHTML = tekst;
 
